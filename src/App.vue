@@ -1,22 +1,17 @@
 <template>
   <div id="app">
-   <!--<test msg="这是新的属性值"></test>-->
-   <users ></users>
+    <img src="./assets/logo.png">
+    <HelloWorld/>
   </div>
-
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
-/**/
-import Test from './components/test.vue' 
-/**/
-import Users from './components/users.vue'
+
 export default {
   name: 'app',
   components: {
-    Test,Users
-
+    HelloWorld
   }
 }
 </script>
