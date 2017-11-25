@@ -15,30 +15,28 @@ Vue.use(VueRouter)
 Vue.config.productionTip = false
 
 const  router=new VueRouter({
-	mode:'history',
-	base:__dirname,
-	routes:[
-	{path:"/",component:Users},
-	{path:"/test",component:Test}
-	]
-
+mode: 'history',
+base: __dirname,
+routes: [
+{path: '/',component:Users},
+{path: '/test',component:Test}]
 })
 
 /* eslint-disable no-new */
 new Vue({
-  //el: '#app',
-  //template: '<App/>',
-  //components: { App }
- router,
- template:`
-<div id="app">
-	<ul>
-		<li>
-			<router-link to="/">Users</router-link>
-			<router-link to="/test">Test</router-link>
-		</li>
-	</ul>
-	<router-view></router-view>
+// el: '#app',
+// template: '<App/>',
+// components: { App }
+router,
+template: `
+<div id='app'>
+<ul>
+<li>
+<router-link to='/'>Users</router-link>
+<router-link to='/test'>Test</router-link>
+</li>
+</ul>
+<router-view></router-view>
 </div>
- `
-}).$mount("#app")
+`
+}).$mount('#app')

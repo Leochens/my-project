@@ -49,7 +49,7 @@ export default{	//对外发布
 			default:"默认文字"
 		}	
 	},
-	data(){
+	data:function(){
 		return {
 			title:"hello Vue.js",
 			user:{
