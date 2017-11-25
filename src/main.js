@@ -5,7 +5,12 @@ import App from './App'
 import VueRouter from 'vue-router'	//引入路由
 import Users  from './components/users'
 import Test from './components/test'
+//使用http http://jsonplaceholder.typicode.com/
+import VueResource from 'vue-resource'
+
+Vue.use(VueResource)
 Vue.use(VueRouter)
+
 //设置路由
 Vue.config.productionTip = false
 

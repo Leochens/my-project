@@ -70,6 +70,13 @@ export default{	//对外发布
 			this.users.splice(this.user);
 		}
 		
+	},
+	created:function(){
+		//console.log("hello");
+		this.$http.get("http://jsonplaceholder.typicode.com/users").then(function(response){
+			//console.log(response.data | response);
+			this.users=response.data;
+		})
 	}
 }
 
